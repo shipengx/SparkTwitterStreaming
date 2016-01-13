@@ -1,2 +1,2 @@
-# SparkTwitterStreaming
-Spark streaming program for processing twitter stream.
+This is a project for processing twitter stream with spark-streaming.
+
