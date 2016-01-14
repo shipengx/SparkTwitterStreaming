@@ -64,8 +64,6 @@ public class LoadTwitterStream {
          statuses.print();
 
 
-         /*
-
          // Convert RDDs of the statuses DStream to DataFrame and run SQL query
          statuses.foreachRDD(new Function2<JavaRDD<String>, Time, Void>() {
              @Override
@@ -95,7 +93,6 @@ public class LoadTwitterStream {
              }
          });
 
-         */
 
 
          ssc.start();
