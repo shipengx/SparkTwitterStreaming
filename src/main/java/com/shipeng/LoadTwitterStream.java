@@ -9,7 +9,7 @@ import org.apache.spark.api.java.function.Function;
 import org.apache.spark.api.java.function.Function2;
 import org.apache.spark.api.java.function.PairFunction;
 import org.apache.spark.api.java.function.VoidFunction;
-import org.apache.spark.api.java.function.VoidFunction2;
+//import org.apache.spark.api.java.function.VoidFunction2;
 import org.apache.spark.sql.SQLContext;
 import org.apache.spark.sql.DataFrame;
 import org.apache.spark.api.java.StorageLevels;
@@ -64,6 +64,8 @@ public class LoadTwitterStream {
          statuses.print();
 
 
+         /*
+
          // Convert RDDs of the statuses DStream to DataFrame and run SQL query
          statuses.foreachRDD(new Function2<JavaRDD<String>, Time, Void>() {
              @Override
@@ -92,6 +94,8 @@ public class LoadTwitterStream {
                  return null;
              }
          });
+
+         */
 
 
          ssc.start();
